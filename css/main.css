@@ -1,0 +1,269 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+	line-height: 1.8em;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.header {
+	background: rgba(78,189,254,1);
+	background: -moz-linear-gradient(left, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(78,189,254,1)), color-stop(100%, rgba(55,144,217,1)));
+	background: -webkit-linear-gradient(left, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -o-linear-gradient(left, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -ms-linear-gradient(left, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: linear-gradient(to right, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	padding-top: 62px;
+	padding-bottom: 130px;
+	color: #fff;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+
+.offer {
+	width: 600px;
+}
+
+.title {
+	font-size: 37px;	
+	width: 600px;
+}
+
+.title span {
+	font-size: 59px;
+} 
+
+.intro {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 37px;
+	width: 400px;
+	margin-top:25px;
+}
+
+.btn{
+	background: #ffd429;
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	display: block;
+	border-radius: 0px;
+	width: 221px;
+	padding: 19px 0;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.btn:hover {
+	background: #e5b906;
+}
+
+.desktop{
+	margin-top:58px;
+}
+
+.learn {
+	padding-top: 104px;
+	padding-bottom:120px ;
+}
+
+.section-title {
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 80px;
+
+}
+
+.fut {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 80px;
+}
+
+.future{
+	width: 315px;
+	background: url('../img/icon1.jpg') no-repeat top center;
+	padding-top: 80px;
+}
+
+.future-title {
+	text-align: center;
+	font-size: 19px;
+}
+
+.future-text {
+	margin-top: 10px ;
+	text-align: center;
+}
+
+.future-travel{
+	width: 270px;
+	background: url('../img/icon2.jpg') no-repeat top center;
+}
+
+.future-values {
+	background: url('../img/icon3.jpg') no-repeat top center;
+}
+
+.mail{
+	background: #ecf2f8;
+	padding-top: 107px;
+	padding-bottom: 93px;
+}
+
+.form {
+	margin-top: 60px;
+}
+
+input {
+	width: 340px;
+	border: 1px solid #bbbbbb;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	border-radius: 0px;
+	height: 47px;
+	padding-left: 27px;
+	display: flex;
+	justify-content: space-between;
+	margin:0 auto;
+	margin-bottom:16px ;
+
+}
+
+.btn-form {
+	border: 0;
+	cursor: pointer;
+	display: inline;
+	margin-top: 14px;
+	margin: 0 auto;
+	display: block;
+	width: 340px;
+}
+
+.footer {
+	padding: 64px 0px;
+	background: #164d7a;
+}
+
+.credits {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	color: #c5d3de;
+	text-align: center;
+}
+
+.red {
+	color: red;
+}
+
+.animated {
+	opacity: 0;
+}
+
+/*Responsive*/
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+	.desktop {
+		display: block;
+	    width: 340px;
+	    margin: 50px auto 0;
+	    margin-right: 30px;
+	}
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+	.offer {
+		width: 100%;
+	}
+	.intro {
+		width: 100%;
+	}
+	.desktop {
+		display: block;
+	    width: 641px;
+	    margin: 58px auto 0;
+	}
+	.fut {
+	    flex-direction: column;
+	}
+	.future {
+		width: auto;
+		margin-bottom: 20px;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	.desktop {
+	    width:500px;
+	}
+	.title{
+		width: 500px;
+	}
+	.input {
+		width: 90%;
+	}
+	.btn{
+		width: 90%;
+	}
+	a {
+		margin: 0 auto;
+	}
+}
+
+/* 320ыpx - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	.title {
+		width: 300px;
+	}
+	.desktop {
+	    width: 100%;
+	    margin: 40px auto 0;
+	}
+	.input {
+		width: 100%;
+	}
+	.btn{
+		width: 100%;
+	}
+}
